@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- Create a form for user login -->
+    <form id="loginForm">
+      <h1>Login</h1>
+      <!-- Input field for the user's name -->
+      <label for="name">User Name: </label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        autocomplete="username"
+      /><br /><br />
+
+      <!-- Input field for the user's password -->
+      <label for="pwd">Password: </label>
+      <input
+        type="password"
+        id="pwd"
+        name="pwd"
+        autocomplete="new-password"
+      /><br /><br />
+
+      <!-- Submit button to trigger the form submission -->
+      <input type="submit" value="Submit" />
+    </form>
+
+    <!-- Paragraph to display messages for the user -->
+    <p id="message"></p>
+  </body>
+</html>
